@@ -1,0 +1,87 @@
+body {
+    background-image: url('https://cdn.s99.vn/ss1/prod/product/b022cafb9a2b45eca503ef421b51d0c4.jpg');
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+     display: flex;
+   flex-direction: column;
+    min-height: 100vh;
+}
+.container-fluid{
+    flex: 1; /* Allow content to grow to fill available space */
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+#result {
+    color: #ff0000;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-text-stroke: 1px #ffffff;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
+    line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+#randomDenominations span {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: randomGradient 2s linear infinite;
+}
+@keyframes randomGradient {
+    0% { background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff); }
+    25% { background: linear-gradient(to right, #ffff00,#00ff00, #0000ff, #ff0000); }
+    50% { background: linear-gradient(to right, #00ff00, #0000ff,#ff0000, #ffff00);}
+    75% { background: linear-gradient(to right, #0000ff, #ff0000, #ffff00, #00ff00);}
+    100% { background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff); }
+}
+   /* Điều chỉnh font size cho mobile */
+    @media (max-width: 576px) {
+        #result {
+         font-size: 2em;
+        }
+       #randomDenominations span {
+       font-size: 1.1em;
+        margin: 0 4px;
+        }
+         .btn-lg {
+         font-size: 1.1rem;
+        padding: 0.6rem 1.2rem;
+        }
+       h1{
+        font-size: 1.8rem;
+        }
+       }
+        /* Xử lý cho màn hình nhỏ hơn nữa */
+    @media (max-width: 375px) {
+        #result {
+            font-size: 1.8em;
+        }
+         #randomDenominations span {
+            font-size: 1em;
+            margin: 0 2px;
+        }
+         h1{
+           font-size: 1.5rem;
+        }
+         .btn-lg {
+         font-size: 1rem;
+        padding: 0.5rem 1rem;
+        }
+    }
+footer{
+  margin-top: auto;
+}

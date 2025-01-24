@@ -109,13 +109,18 @@ canvas {
 .title {
   color: #ff0000;
   text-shadow: 2px 2px 7px #ffffff;
-
+  
   font-weight: bold;
-  font-size: 35pt;
-  font-family: "Open Sans", sans-serif;
+  font-size: 50pt;
+  font-family: "Times new roman", serif;
 }
 footer {
-  color: #ff0000;
+  color: #ff6060;
   font-weight: bold;
   padding-bottom: 150px; /* Thêm padding dưới để footer cách thanh điều hướng */
+}
+#countdown{
+  opacity: 0.99;
+  text-shadow: 1px 1px 1px #ffffff;
+  
 }
